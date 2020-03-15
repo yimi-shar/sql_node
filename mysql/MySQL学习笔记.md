@@ -79,7 +79,7 @@ CREATE TABLE user (
 -- 自增约束
 -- 自增约束的主键由系统自动递增分配。
 CREATE TABLE user (
-    id INT PRIMARY KEY AUTO_INCREMENT,
+    id INT PRIMARY KEY AUTO_INCREMENT,      
     name VARCHAR(20)
 );
 
