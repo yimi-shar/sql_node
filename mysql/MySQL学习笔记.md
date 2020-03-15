@@ -92,10 +92,10 @@ ALTER TABLE user MODIFY id INT PRIMARY KEY;
 ALTER TABLE user drop PRIMARY KEY;
 ```
 
-### 唯一主键
+### 唯一约束（与主键约束差别，主键约束不能为空，唯一约束可以）
 
 ```mysql
--- 建表时创建唯一主键
+-- 建表时创建唯一约束
 CREATE TABLE user (
     id INT,
     name VARCHAR(20),
@@ -136,7 +136,7 @@ CREATE TABLE user2 (
     age INT DEFAULT 10
 );
 
--- 移除非空约束
+-- 移除非空.约束
 ALTER TABLE user MODIFY age INT;
 ```
 
